@@ -39,5 +39,34 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- <script type="text/javascript" src="http://tracking.musixmatch.com/t1.0/AMa6hJCIEzn1v8RuOP"></script> -->
+
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script>
+      // window.onSpotifyWebPlaybackSDKReady = () => {
+
+      //   const token = 'BQBsKS71IiUSJzpi30-UMZ7xNN1c3nbVnKaHASDVO18oAMvZ1_GrkMDm5toMuN2X2l2Aah1O9sitxPmnhwQh60ayOLRS3jhzpUad6RjkHxxJB6oQcdKyPLhFU675uvD_Hh_F9qoaSNlineuEaHYiVHjDsHD8o7Zy-oR1KpsxWwVNcjPqN0RI0_VhFE-V6YlvzMNkBoCMH2iu0qmLGvGWmErvuWGdS4846b25WXkHpiMvWUq2uJWAK9YXgFI1NJxafQh0gNL5XaarpxV-345W41NdWAyw4Is6B3-mt7A';
+      //   const player = new Spotify.Player({
+      //     name: 'Web Playback SDK Quick Start Player',
+      //     // getOAuthToken: cb => { cb(token); }
+      //   });
+      //   console.log('wor????')
+      //   player.connect();
+      // };
+      window.onSpotifyWebPlaybackSDKReady = () => {
+        console.log(
+          "The Web Playback SDK is ready. We have access to Spotify.Player"
+        );
+        console.log(window.Spotify.Player);
+        // const player = new Spotify.Player({
+        //   name: "Hello world!",
+        //   getOAuthToken: (cb) => {
+        //     cb("Bearer BQCC_M0-eNNClTJ1W09o3hNPkVFTwUSSAoVhXDRltrSkaIdxb1_Hy947Z_mnh-51PlmLOcCF8UZiv4sttPmw_z7HGgqs2ebAI6QoKAPBPhvezyrWTtJiRn3xuDfCk4aKBhgwO2BSsB2d6qM37dmibmENckcQycX0k0_kgchWcKexzNdVVuy0qHcV_NVtNxsX0ihMy66vZo4l");
+        //   },
+        // })
+        // player.connect();
+      };
+    </script>
   </body>
 </html>
