@@ -1,10 +1,6 @@
 import axios from 'axios'
 import App from '../App'
 
-// const accessToken = (token) => {
-//     return token 
-
-// }
 
 export default axios.create({
     baseURL: 'https://api.spotify.com/v1',

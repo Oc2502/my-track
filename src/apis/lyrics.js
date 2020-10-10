@@ -9,12 +9,3 @@ export default axios.create({
 });
 
 
-// key : 717601ea1e57498a958b54e2a1f76178
-
-
-
-// geiuse:
-// client id : 7MiUJQK28azF1z8dHLZTF5ydWXpY455e1g1ePqRj8ZssxFb0S2VoU5CdeZAf6CEf
-// client secret : NjjzWjfP_uljFPuHUhNXaAY5IndlVYmS9ibwAUzU4oHwJRCC0md9uDX9h1U1NQr6aJLfEV83HiwkCdtKxnqzaw
-
-{/* <script src="https://genius.codes"></script> */}
