@@ -5,7 +5,7 @@ const TrackList = (props) => {
     // state = {  }
 
     const tracks = props.tracks.map(track => {
-        console.log(track)
+        // console.log(track)
         return (
             <Track 
             key={track.id} 

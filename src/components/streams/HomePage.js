@@ -1,22 +1,23 @@
 import React from 'react';
 import musicList from '../../apis/musicList';
 import CategoryList from '../CategoryList.component';
-import App from '../../App'
+// import App from '../../App'
 
 class HomePage extends React.Component {
 
     constructor(){
         super()
         // const token = new App().state.token
+        this.state = { categories:[], token:''  }
     }
-    state = { categories:[], token:''  }
+    
 
 
     componentDidMount = () => {
         this.getCategories()
-        this.setState({token: new App().state.token},()=>{
-            console.log(this.state.token)
-        })
+        // this.setState({token: new App().state.token},()=>{
+        //     console.log(this.state.token)
+        // })
         // console.log('token-home', token)
         // console.log('token-app', new App().state.token)
 

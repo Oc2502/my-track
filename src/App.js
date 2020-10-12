@@ -4,7 +4,6 @@ import Header from './components/streams/Header';
 import PlayList from './components/streams/PlayList';
 import Search from './components/streams/Search';
 import HomePage from './components/streams/HomePage';
-import musicList from './apis/musicList';
 import TrackDetails from './components/TrackDetails';
 
 
@@ -13,7 +12,7 @@ class App extends React.Component {
     constructor() {
         super();
         const params = this.getHashParams()
-        const token = params.access_token;
+        // const token = params.access_token;
         this.state = {
             loggedIn: params.access_token ? true : false,
             token: params.access_token,
@@ -21,6 +20,7 @@ class App extends React.Component {
         }
 
     }
+    
     getHashParams() {
         let hashParams = {};
         let e, r = /([^&;=]+)=?([^&;]*)/g,

@@ -1,11 +1,11 @@
 import axios from 'axios'
-import App from '../App'
+// import App from '../App'
 
 
 export default axios.create({
     baseURL: 'https://api.spotify.com/v1',
     headers: {
-        Authorization: `Bearer BQApHz-1tkUoOZHsgWtSm6U04kkcAGA5-F9RWUKpXccwLWWj7tj-oyRkYk3S8Kg912f9RUIE2eQQYXXi_os_fvs_Zrkkp87WSUnHILSr4dF6ZZiWDGvMNSItFYJAQyzvfq-kFtnjzGrZztT6dRCTEWhs8-lGRgwm_lPWQ4lFkEIDqb1CjiPcQSfSz0lSpwG6paP7m9C1yY7pekK58iEbMqkcztMVUYMHU_flD-eVOZ_s-2_C36owElHvXZoZ_ktRh6-1PscE9qPZBv_ht2NHY5QPDCy3ztDkRssPmH0`,
+        Authorization: `Bearer BQCcKzg5OOAQbc8pvlcouhb9KZIK-3Hyh5KEEqf1-_N6PkPYAZ0nJz03cfl4NaVekR8ztb5cOm1kcCOfgl7phDORkfwywBXMGHb0xtaC1TTKXgQwFl9YjF1VKJRIw9Tw-M50F5ZPbIyIUPdRBDjBrWidoGZojuHm_KTJtGv5T4CQEmNuJftk04umCaey3dCJUALTsXzqX-gGq-gdf2VwFGIOphy1imXLflSRbinOqyj6N4w3w-r83PU-5bW2bgQ2pOYSuRESK1ahbgm24e-rgD9WHlq2mA2Eg7USGv4`,
 
     },
 });

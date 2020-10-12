@@ -23,17 +23,17 @@ class PlayList extends React.Component {
     }
 
     onTrackClick = (e) => {
-        console.log(this.state.playList[e.target.id])
+        // console.log(this.state.playList[e.target.id])
         this.setState({playing : this.state.playList[e.target.id], lyrics: null})
     }
 
     nowPlaying = () => {
-        console.log(this.state.playing.track.artists[0].name)
-        console.log(this.state.playing.track.name)
+        // console.log(this.state.playing.track.artists[0].name)
+        // console.log(this.state.playing.track.name)
         return (
             <div className="now-playing">
                 <div> 
-                    <img src={`${this.state.playing.track.album.images[0].url}`}/>
+                    <img src={`${this.state.playing.track.album.images[0].url}`} alt={""}/>
                     <button onClick={this.getTrackId}> View Lyrics</button>
                 </div>
                  {this.state.lyrics ? <div className="lyrics-container">{this.state.lyrics}</div> : null}
@@ -76,11 +76,11 @@ class PlayList extends React.Component {
                     <div>
                         {/* <PlayerNew/> */}
                     </div>
-                    <div class='list'>
+                    <div className='list'>
                         <ul>
                             {  this.state.playList.map( (track, i )=> { 
                                 return (
-                                    <li id={i} onClick={this.onTrackClick} >
+                                    <li id={i} onClick={this.onTrackClick} key={i}>
                                         <span>{i+1}</span>
                                         {track.track.name} 
                                         <span>show</span>

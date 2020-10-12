@@ -2,7 +2,7 @@ import React from 'react';
 import musicList from '../../apis/musicList';
 import SearchBar from '../SearchBar.component';
 import TrackList from '../TrackList.component';
-import App from '../../App'
+
 
 
 class Search extends React.Component {
@@ -23,7 +23,6 @@ class Search extends React.Component {
                 <SearchBar onSubmit={this.onFormSubmit}/>
                 <div>
                     <TrackList tracks={this.state.tracks}/>
-                    
                 </div>
             </div> 
         );
